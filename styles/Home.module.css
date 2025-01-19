@@ -1,0 +1,94 @@
+.container {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/image.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main {
+  margin-top: 20px; /* To account for the fixed header */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: calc(100% + 40px);
+  height: calc(100% + 40px);
+  background-color: rgba(255, 255, 255, 0.678);
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.mainHeading {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.subHeading {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.image {
+  width: 1200px;
+  height: auto;
+  margin: 0 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.overlappingImage {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  z-index: -1;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button {
+  background-color: #333;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #555;
+}
